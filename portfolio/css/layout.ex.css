@@ -1,0 +1,130 @@
+@charset "utf-8";
+/**
+ * Copyright (C) NAVER <http://www.navercorp.com>
+ * @author NAVER (developers@xpressengine.com)
+ *
+ * Find and create module object by mif, act in Request Argument
+ * Set module information
+ *
+ * @mainpage XpressEngine
+ * @section intro introduction
+ *
+ * XE is an opensource and being developed in the opensource project.
+ * For more information, please see the link below.
+ * - Official website: http://www.xpressengine.com
+ * - Offcial Repository: https://github.com/xpressengine/xe-core
+ * 
+ * "XpressEngine (XE)" is free software; you can redistribute it and/or 
+ * modify it under the terms of the GNU Lesser General Public 
+ * License as published by the Free Software Foundation; either 
+ * version 2.1 of the License, or (at your option) any later version. 
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+ **/
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,Helvetica Neue,Helvetica,sans-serif;font-size:12px}
+body{position:static}
+img,fieldset,button{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.edge{position:absolute;top:5px;right:8px;width:0;height:0;border-width:0 8px 8px;border-style:solid;border-color:transparent transparent #f9f9f9}
+.clear{clear:both}
+
+/* Skin to content */
+.skip{margin:0}
+.skip>a{display:block;overflow:hidden;height:0;line-height:28px;text-align:center}
+.skip>a:focus{height:auto}
+
+.ex_ct{position:absolute;top:0;bottom:0;min-width:1156px;min-height:820px;width:100%;height:100%;color:#fff}
+
+/* header */
+.ex_ct .header{overflow:hidden;width:293px;height:100%}
+.ex_ct .header .header_inn{overflow:hidden;margin:72px 0 0 42px}
+.ex_ct .header .ex_logo{display:block;margin-bottom:32px}
+.ex_ct .header h1{font-size:21px;margin-bottom:46px;font-weight:normal}
+.ex_ct .header h1 a{color:#fff}
+.ex_ct .header .gnb .gnb_lst li{margin-bottom:21px}
+.ex_ct .header .gnb .gnb_lst li a{font-size:15px;color:#ececec;line-height:29px}
+.ex_ct .header .gnb .gnb_lst li a i{margin-right:8px}
+.ex_ct .header .gnb .gnb_lst li dt{margin-bottom:10px}
+.ex_ct .header .gnb .gnb_lst li dd{margin-bottom:10px;padding-left:24px}
+.ex_ct .header .gnb .gnb_lst li dd a{font-size:13px;line-height:15px}
+.ex_ct .header .gnb .gnb_lst li a:hover{color:#ffb600}
+.ex_ct .header .gnb .gnb_lst li .on_lst a{color:#ffb600}
+.ex_ct .header .gnb .gnb_lst li .on_sub_lst a{color:#ffb600}
+.ex_ct .header .gnb .gnb_lst .on_lst a{color:#ffb600}
+.header_bg{position:fixed;top:0;left:0;height:100%;width:330px;background:url(../img/bg_header.png) 0 0 repeat-y}
+
+/* slide content */
+.ex_ct .slide_wrap{position:absolute;bottom:0;right:88px;width:100%;padding-bottom:330px}
+.ex_ct .slide_content{overflow:hidden;position:absolute;bottom:140px;right:0px;width:500px}
+.ex_ct .slide_content .content_lst{width:500px;margin-top:56px}
+.ex_ct .slide_content .content_lst .lst_txt{font-size:35px;margin-bottom:23px}
+.ex_ct .slide_content .content_lst .lst_txt2{font-size:19px}
+
+/* footer */
+.ex_ct .footer{position:fixed;bottom:0;left:0;min-width:1156px;width:100%;height:30px;line-height:30px;font-size:12px;color:#fff}
+.ex_ct .footer .ft_bg{position:absolute;top:0;left:0;width:100%;height:30px;background-color:#FFC107;opacity:0.70;filter:alpha(opacity=70);-moz-opacity:0.7}
+.ex_ct .footer .footer_inn p{position:absolute;bottom:0;left:0;min-width:1156px;width:100%;height:30px;text-align:center}
+.ex_ct .footer .footer_inn p a{color:#fff}
+.ex_ct .footer .footer_inn p .links_area a,.ex_ct .footer .footer_inn p .ft_bar{margin-right:15px}
+
+/* login */
+.ex_ct .header .header_inn .log_area{z-index:10;position:fixed;bottom:4px;left:47px;height:20px}
+.ex_ct .header .header_inn .log_area ul li{float:left;position:relative;width:20px;height:20px;margin-right:25px}
+.ex_ct .header .header_inn .log_area ul li .log_btn{font-size:20px;color:#fff;line-height:20px}
+.ex_ct .header .header_inn .log_area ul li .log_btn .bg_ft_bubble{width:0;height:0;font-size:0;line-height:0;display:inline;text-indent:-9999px}
+.ex_ct .header .header_inn .log_area ul li .log_btn:hover .bg_ft_bubble{position:absolute;top:-42px;left:5px;display:block;width:60px;height:34px;background:url(../img/bg_ft_bubble.png) 0 0 no-repeat;text-indent:0;text-align:center;font-size:11px;line-height:30px;color:#333}
+.ex_ct .header .header_inn .log_area.out ul .log_lst2{display:block}
+.ex_ct .header .header_inn .log_area.out ul .log_lst3{display:none}
+.ex_ct .header .header_inn .log_area.out ul .log_lst4{display:none}
+.ex_ct .header .header_inn .log_area.in ul .log_lst2{display:none}
+.ex_ct .header .header_inn .log_area.in ul .log_lst3{display:block}
+.ex_ct .header .header_inn .log_area.in ul .log_lst4{display:block}
+
+/* color theme */
+.ex_ct.color_tm2 .header .gnb .gnb_lst .on_lst a{color:#00bfa5}
+.ex_ct.color_tm2 .header .gnb .gnb_lst li .on_lst a{color:#00bfa5}
+.ex_ct.color_tm2 .header .gnb .gnb_lst li .on_sub_lst a{color:#00bfa5}
+.ex_ct.color_tm2 .header .gnb .gnb_lst li a:hover{color:#00bfa5}
+.ex_ct.color_tm2 ul#slide-list li.current-slide a,.ex_ct.color_tm2 ul#slide-list li.current-slide a:hover{background-position:0 -12px}
+.ex_ct.color_tm2 ul#slide-list li a{background-position:-18px -12px}
+.ex_ct.color_tm2 ul#slide-list li a:hover{background-position:0 -12px}
+.ex_ct.color_tm2 .footer .ft_bg{background-color:#00bfa5}
+.ex_ct.color_tm3 .header .gnb .gnb_lst .on_lst a span{text-decoration:underline}
+.ex_ct.color_tm3 .header .gnb .gnb_lst li .on_lst a span{text-decoration:underline}
+.ex_ct.color_tm3 .header .gnb .gnb_lst li .on_sub_lst a span{text-decoration:underline}
+.ex_ct.color_tm3 .header .gnb .gnb_lst li a{color:#ececec }
+.ex_ct.color_tm3 .header .gnb .gnb_lst li a:hover span{text-decoration:underline}
+.ex_ct.color_tm3 ul#slide-list li.current-slide a,.ex_ct.color_tm3 ul#slide-list li.current-slide a:hover{background-position:0 -24px}
+.ex_ct.color_tm3 ul#slide-list li a{background-position:-18px -24px}
+.ex_ct.color_tm3 ul#slide-list li a:hover{background-position:0 -24px}
+.ex_ct.color_tm3 .footer .ft_bg{background-color:#fff}
+.ex_ct.color_tm3 .footer .footer_inn p,.ex_ct.color_tm3 .footer .footer_inn p a{color:#7a7a7a}
+.ex_ct.color_tm3 .header .header_inn .log_area ul li a,.ex_ct.color_tm3 .header .header_inn .log_area ul li i{color:#7a7a7a}
+
+/* ex_sub */
+.ex_ct.ex_sub .header{float:left}
+.ex_ct.ex_sub .content{float:left;width:800px;height:100%}
+.ex_ct.ex_sub .content .content_inn{padding:70px 0 100px 0}
+.ex_ct.ex_sub .content .content_inn .inn_section{position:relative;width:100%}
+.ex_ct.ex_sub .content .content_inn .inn_section h2{margin-bottom:22px;font-size:33px;font-weight:normal}
+.ex_ct.ex_sub .content .content_inn .inn_section .route_txt{margin-bottom:22px;text-align:right;font-size:13px}
+.ex_ct.ex_sub .content .content_inn .inn_section .route_txt a{color:#fff}
+.ex_ct.ex_sub .content .content_inn .inn_section2{overflow:hidden;width:700px;padding:50px;background:url(../img/bg_sub_section2.png) 0 0 repeat}
+
+.body_bg{position:fixed;top:0;left:0;height:100%;width:100%;background:url(../img/img_sub_top.jpg) 0 0 repeat-x #151515}
+.body_bg_right{position:fixed;top:0;left:0;height:100%;width:100%;background:url(../img/bg_ct_right.png) 100% 0 repeat-y}

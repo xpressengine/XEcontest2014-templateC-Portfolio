@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (C) NAVER <http://www.navercorp.com> 
+ * @author NAVER (developers@xpressengine.com)
+ *
+ * Find and create module object by mif, act in Request Argument
+ * Set module information
+ *
+ * @mainpage XpressEngine
+ * @section intro introduction
+ *
+ * XE is an opensource and being developed in the opensource project.
+ * For more information, please see the link below.
+ * - Official website: http://www.xpressengine.com
+ * - Offcial Repository: https://github.com/xpressengine/xe-core
+ * 
+ * "XpressEngine (XE)" is free software; you can redistribute it and/or 
+ * modify it under the terms of the GNU Lesser General Public 
+ * License as published by the Free Software Foundation; either 
+ * version 2.1 of the License, or (at your option) any later version. 
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+-->
+<html lang="ko">
+<head>
+<!-- META -->
+<meta charset="utf-8">
+<meta name="Generator" content="XpressEngine">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1140">
+<!-- TITLE -->
+<title>Portfolio Theme : XE Contest</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../xe_common/xe.min.css">
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49314/XEIconv10/style.css">
+<link rel="stylesheet" href="./css/layout.ex.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="../xe_icon/ie7/ie7.css"><![endif]-->
+<!-- JS -->
+<!--[if lt IE 9]><script src="../xe_common/jquery-1.x.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="../xe_common/jquery.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="../xe_common/html5.js"></script><![endif]-->
+<script src="../xe_common/xe.min.js"></script>
+</head>
+
+<body>
+<!-- body background -->
+<span class="body_bg"></span>
+<!-- header 그라데이션 -->
+<span class="header_bg"></span>
+<!-- body right bg 그라데이션 -->
+<span class="body_bg_right"></span>
+<!-- container -->
+<!-- [D] 컬러테마 적용시 클래스 color_tm2, color_tm3 추가 -->
+<div class="container ex_ct ex_sub color_tm2">
+
+	<!-- header -->
+	<header class="header">
+		<div class="header_inn">
+			<!-- [D] 컬러 테마에 따라 로고 이미지 수정 logo_ver1~3.png -->
+			<span class="ex_logo"><img src="img/logo_ver2.png" width="96" height="64" alt="로고이미지"></span>
+			<h1><a href="ex.main.html">XE Contest 2014</a></h1>
+
+			<!-- gnb -->
+			<div class="gnb">
+				<ul class="gnb_lst">
+					<li><a href="ex.main.html"><i class="xe-tent"></i><span>HOME</span></a></li>
+				<!--<li>
+						<dl>
+							<dt><a href="#"><i class="xe-idea"></i><span>XE공모전</span></a></dt>
+							<dd><a href="http://contest.xpressengine.com/"><span>공모전 소개</span></a></dd>
+							<dd><a href="https://form.office.naver.com/form/responseView.cmd?formkey=NDg4M2Q3MmQtOTBjZS00MTM2LTk0ZTUtNWUyNTJiNzk5Yjhi&sourceId=urlshare"><span>공모전 접수</span></a></dd>
+						</dl>
+					</li>-->
+					<li>
+						<dl>
+							<!-- [D] 선택된 메뉴의 목차 on_lst 클래스 추가 / 선택된 메뉴의 항목 on_sub_lst 추가 -->
+							<dt><a href="ex.main_orange.html"><i class="xe-color"></i><span>컬러테마</span></a></dt>
+							<dd><a href="ex.main_orange.html"><span>첫 번째</span></a></dd>
+							<dd><a href="ex.main_blue.html"><span>두 번째</span></a></dd>
+							<dd><a href="ex.main_white.html"><span>세 번째</span></a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt class="on_lst"><a href="ex.main_layout.html"><i class="xe-layout-top"></i><span>레이아웃</span></a></dt>
+							<dd><a href="ex.main_layout.html"><span>메인 레이아웃</span></a></dd>
+							<dd class="on_sub_lst"><a href="ex.sub.html"><span>서브 레이아웃</span></a></dd>
+						</dl>
+					</li>
+				<!--<li><a href="#"><i class="xe-cloud-download"></i><span>다운로드</span></a></li>-->
+					<li><a href="ex.sub_license.html"><i class="xe-announce"></i><span>라이선스</span></a></li>
+				</ul>
+			</div>
+			<!-- //gnb -->
+
+			<!-- login -->
+			<!-- [D] 로그인 in, 로그아웃 out 클래스 추가 -->
+			<div class="log_area in">
+				<ul>
+					<!-- [D] 비활성화시 a태그 span으로 변경 -->
+					<li class="log_lst1"><a href="#" class="log_btn ex_log"><i class="xe-user-add"></i><span class="bg_ft_bubble">logout</span></a></li>
+					<!-- [D] 로그인후  해당 코드로 변경 <li class="log_lst1"><a href="#" class="log_btn ex_log"><i class="xe-user"></i><span class="bg_ft_bubble">login</span></a></li> -->
+					<li class="log_lst2"><a href="#" class="log_btn ex_join"><i class="xe-plus-circle"></i><span class="bg_ft_bubble">join</span></a></li>
+					<li class="log_lst3"><a href="#" class="log_btn ex_setting"><i class="xe-user-info"></i><span class="bg_ft_bubble">my page</span></a></li>
+					<!-- [D] 관리자가 아닐경우 log_lst4 삭제 -->
+					<li class="log_lst4"><a href="#" class="log_btn ex_setting"><i class="xe-tool"></i><span class="bg_ft_bubble">setting</span></a></li>
+				</ul>
+			</div>
+			<!-- //login -->
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- sub content -->
+	<div id="content" class="content">
+		<div class="content_inn">
+			<div class="inn_section">
+				<h2>여기는게시판</h2>
+				<p class="route_txt"><a href="#">홈</a> &gt; <a href="#">레이아웃</a> &gt; <a href="#">서브레이아웃</a></p>
+			</div>
+			<div class="inn_section2">
+				<!-- [D] 내용 삽입 영역 -->
+				<img src="img/@board.png" width="700" height="1223" alt="예제이미지">
+				<!-- //내용 삽입 영역 -->
+			</div>
+		</div>
+	</div>
+	<!-- //sub content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_inn">
+			<span class="ft_bg"></span>
+			<p class="ft_txt">
+				<span class="links_area"><a href="#">Contact</a><a href="#">개인정보취급방침</a><a href="#">운영규칙</a><a href="#">이메일찾기</a></span><span class="ft_bar">/</span>Copyright &copy; <a href="http://www.navercorp.com/ko/index.nhn">NAVER Corp.</a> Supported by <a href="#">D2 Program</a>
+			</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+</div>
+<!-- // container -->
+
+</body>
+</html>
