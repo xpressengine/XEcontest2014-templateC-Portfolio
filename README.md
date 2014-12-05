@@ -1,14 +1,14 @@
-# XE-Portfolio
+# [XE-Portfolio](http://contest.xpressengine.com/templates/portfolio/ex.main.html)
 XpressEngine에서 제공하는 템플릿C는 이미지 작품을 위한 포트폴리오형 템플릿입니다.
 
 ## XE Contest 2014
 이 템플릿은 [XE Contest 2014](http://contest.xpressengine.com)를 위해 제작되었습니다.
 디자인과 마크업까지 함께 제공되어 바로 레이아웃 또는 스킨 제작에 활용하여 출품할 수 있습니다.
 
-## 미리보기
+## Preview
 http://contest.xpressengine.com/templates/portfolio/ex.main.html
 
-## 라이선스
+## License
 제공된 웹 템플릿은 아래의 라이선스를 준수해야 합니다.
 아래 라이선스는 템플릿 이용자의 저작물에 적용하여, 이용자의 권리 또한 보장합니다.
 
